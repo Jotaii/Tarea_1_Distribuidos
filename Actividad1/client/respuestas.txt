@@ -1,0 +1,30 @@
+Iniciando cliente 127.0.1.1
+Conectando a 0.0.0.0 por puerto 5000
+Enviando saludo al servidor...
+Recibido b'Que tengas un buen dia'
+Cerrando socket
+
+Iniciando cliente 127.0.1.1
+Conectando a 0.0.0.0 por puerto 5000
+Enviando saludo al servidor...
+Recibido b'Que tengas un buen dia'
+Cerrando socket
+
+Iniciando cliente 127.0.1.1
+Conectando a 0.0.0.0 por puerto 5000
+Enviando saludo al servidor...
+Recibido b'Que tengas un buen dia'
+Cerrando socket
+
+Iniciando cliente 127.0.1.1
+Conectando a 0.0.0.0 por puerto 5000
+Enviando saludo al servidor...
+Recibido b'Que tengas un buen dia'
+Cerrando socket
+
+Iniciando cliente 127.0.1.1
+Conectando a servidor 0.0.0.0 por puerto 5000
+Enviando saludo al servidor...
+Servidor responde b'Que tengas un buen dia'
+Cerrando socket
+

@@ -1,0 +1,36 @@
+version: "3"
+
+services:
+
+  #Conatiner con rol de servidor
+  server:
+    #Se especifica la ubicación en donde está almacenado el Dockerfile.
+    build: server/
+
+    #Se ejecuta el archivo del servidor.
+    command: python3 server.py
+
+    #Primer puerto es del computador y el segundo el utilizado por el container. Se usa el 5000 especificado en la tarea..
+    ports:
+      - 5000:5000
+    
+    volumes:
+      - ./server:/server/
+
+  #Container con rol de cliente.
+  client:
+    #Se especifica la ubicación en donde está almacenado el Dockerfile.
+    build: client/
+
+    #Se ejecuta el archivo del cliente.
+    command: python3 client.py
+        
+    volumes:
+      - ./client:/client/
+
+    #Se define el tipo de red para los container. En este caso con host se especifica que el container puede usar al localhost del computador.
+    network_mode: host
+
+    #Se espera que el servido esté listo para ejecutar el cliente.
+    depends_on:
+      - server

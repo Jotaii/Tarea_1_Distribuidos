@@ -1,0 +1,30 @@
+[02:38:32] Iniciando servidor
+[02:38:32] Se ha conectado el cliente 172.19.0.1 al servidor
+[02:38:32] Cliente dice: b'Saludos'
+[02:38:32] Respondiendo a host...
+[02:38:32] Cerrando conexion con el cliente
+ 
+[02:39:40] Iniciando servidor
+[02:39:41] Se ha conectado el cliente 172.19.0.1 al servidor
+[02:39:41] Cliente dice: b'Saludos'
+[02:39:41] Respondiendo a host...
+[02:39:41] Cerrando conexion con el cliente
+ 
+[02:42:52] Iniciando servidor
+[02:42:52] Se ha conectado el cliente 172.19.0.1 al servidor
+[02:42:52] Cliente dice: b'Saludos'
+[02:42:52] Respondiendo a host...
+[02:42:52] Cerrando conexion con el cliente
+ 
+[02:50:32] Iniciando servidor
+[02:50:32] Se ha conectado el cliente 172.19.0.1 al servidor
+[02:50:32] Cliente dice: b'Saludos'
+[02:50:32] Respondiendo a host...
+[02:50:32] Cerrando conexion con el cliente
+ 
+[02:55:02] Iniciando servidor
+[02:55:02] Se ha conectado el cliente 172.19.0.1 al servidor
+[02:55:02] Cliente dice: b'Saludos'
+[02:55:02] Respondiendo a host...
+[02:55:02] Cerrando conexion con el cliente
+ 
