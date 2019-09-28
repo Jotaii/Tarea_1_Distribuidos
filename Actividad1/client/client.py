@@ -9,7 +9,7 @@ print("Iniciando cliente...")
 f.write("Iniciando cliente\n")
 newSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-server_address = ("0.0.0.0", 5000)
+server_address = ("server", 5000)
 print('Conectando a servidor {} por puerto {}'.format(*server_address))
 f.write('Conectando a servidor {} por puerto {}'.format(*server_address) + "\n")
 newSocket.connect(server_address)

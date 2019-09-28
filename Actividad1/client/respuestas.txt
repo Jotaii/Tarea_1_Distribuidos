@@ -28,3 +28,35 @@ Enviando saludo al servidor...
 Servidor responde b'Que tengas un buen dia'
 Cerrando socket
 
+Iniciando cliente
+Conectando a servidor 0.0.0.0 por puerto 5000
+Enviando saludo al servidor...
+Servidor responde b'Que tengas un buen dia'
+Cerrando socket
+
+Iniciando cliente
+Conectando a servidor 0.0.0.0 por puerto 5000
+Iniciando cliente
+Conectando a servidor server por puerto 5000
+Enviando saludo al servidor...
+Servidor responde b'Que tengas un buen dia'
+Cerrando socket
+
+Iniciando cliente
+Conectando a servidor server por puerto 5000
+Enviando saludo al servidor...
+Servidor responde b'Que tengas un buen dia'
+Cerrando socket
+
+Iniciando cliente
+Conectando a servidor server por puerto 5000
+Enviando saludo al servidor...
+Servidor responde b'Que tengas un buen dia'
+Cerrando socket
+
+Iniciando cliente
+Conectando a servidor server por puerto 5000
+Enviando saludo al servidor...
+Servidor responde b'Que tengas un buen dia'
+Cerrando socket
+

@@ -15,7 +15,7 @@ newSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 #Se utiliza la ip "0.0.0.0" para que todos puedan acceder al servidor mientras estén en la misma red.
 #Se utiliza el port 5000 especificado en la tarea.
-server_address = ("0.0.0.0", 5000)
+server_address = ("server", 5000)
 newSocket.bind(server_address)
 newSocket.listen(1)
 

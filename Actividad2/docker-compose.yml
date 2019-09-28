@@ -1,0 +1,47 @@
+version: "3"
+
+services:
+
+  headnode:
+    build: headnode/
+
+    command: python3 headnode.py
+
+    volumes:
+      - ./headnode/:/headnode/
+
+  datanode1:
+    build: datanode/
+
+    command: python3 datanode.py
+
+    volumes:
+      - ./datanode/:/datanode/
+
+    depends_on:
+      - headnode
+  
+  datanode2:
+    build: datanode/
+
+    command: python3 datanode.py
+
+    volumes:
+      - ./datanode/:/datanode/
+
+    depends_on:
+      - headnode
+
+  datanode3:
+    build: datanode/
+
+    command: python3 datanode.py
+
+    volumes:
+      - ./datanode/:/datanode/
+
+    depends_on:
+      - headnode
+
+  client:
+    build: client/

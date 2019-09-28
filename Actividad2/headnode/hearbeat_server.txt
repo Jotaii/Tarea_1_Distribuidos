@@ -1,0 +1,118 @@
+Enviando multicast
+Esperando respuestas
+No llegaron respuestas
+Cerrando socket
+Enviando multicast
+Esperando respuestas
+Cerrando socket
+Enviando multicast
+Esperando respuestas
+No llegaron respuestas
+Cerrando socket
+Enviando multicast
+Esperando respuestas
+Recibido ack desde 172.21.0.6
+Esperando respuestas
+Recibido ack desde 172.21.0.5
+Esperando respuestas
+Recibido ack desde 172.21.0.4
+Esperando respuestas
+No llegaron respuestas
+Cerrando socket
+Enviando multicast
+Esperando respuestas
+Recibido ack desde 172.21.0.5
+Esperando respuestas
+Recibido ack desde 172.21.0.6
+Esperando respuestas
+Recibido ack desde 172.21.0.4
+Esperando respuestas
+No llegaron respuestas
+Cerrando socket
+Enviando multicast
+Esperando respuestas
+Recibido ack desde 172.21.0.5
+Esperando respuestas
+Recibido ack desde 172.21.0.4
+Esperando respuestas
+Recibido ack desde 172.21.0.6
+Esperando respuestas
+No llegaron respuestas
+Cerrando socket
+Enviando multicast
+Esperando respuestas
+Recibido ack desde 172.21.0.5
+Esperando respuestas
+Recibido ack desde 172.21.0.4
+Esperando respuestas
+Recibido ack desde 172.21.0.6
+Esperando respuestas
+No llegaron respuestas
+Cerrando socket
+Enviando multicast
+Esperando respuestas
+Recibido ack desde 172.21.0.5
+Esperando respuestas
+Recibido ack desde 172.21.0.6
+Esperando respuestas
+Recibido ack desde 172.21.0.4
+Esperando respuestas
+No llegaron respuestas
+Cerrando socket
+Enviando multicast
+Esperando respuestas
+Recibido ack desde 172.21.0.5
+Esperando respuestas
+Recibido ack desde 172.21.0.6
+Esperando respuestas
+Recibido ack desde 172.21.0.4
+Esperando respuestas
+No llegaron respuestas
+Cerrando socket
+Enviando multicast
+Esperando respuestas
+Recibido ack desde 172.21.0.6
+Esperando respuestas
+Recibido ack desde 172.21.0.5
+Esperando respuestas
+Recibido ack desde 172.21.0.4
+Esperando respuestas
+No llegaron respuestas
+Cerrando socket
+Enviando multicast
+Esperando respuestas
+No llegaron respuestas
+Cerrando socket
+Enviando multicast
+Esperando respuestas
+No llegaron respuestas
+Cerrando socket
+Enviando multicast
+Esperando respuestas
+Enviando multicast
+Esperando respuestas
+No llegaron respuestas
+Cerrando socket
+
+Enviando multicast
+Esperando respuestas
+Recibido ack desde 172.21.0.5
+Esperando respuestas
+Recibido ack desde 172.21.0.4
+Esperando respuestas
+Recibido ack desde 172.21.0.6
+Esperando respuestas
+No llegaron respuestas
+Cerrando socket
+
+Enviando multicast
+Esperando respuestas
+Recibido ack desde 172.21.0.5
+Esperando respuestas
+Recibido ack desde 172.21.0.6
+Esperando respuestas
+Recibido ack desde 172.21.0.4
+Esperando respuestas
+No llegaron respuestas
+Cerrando socket
+
