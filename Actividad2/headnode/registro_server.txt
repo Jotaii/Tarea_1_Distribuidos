@@ -1,0 +1,6 @@
+Iniciando servidor de headnode
+Se ha conectado el cliente 192.168.96.6
+Cliente dice: b'Saludos'
+Respondiendo a cliente...
+Cerrando conexion con cliente
+

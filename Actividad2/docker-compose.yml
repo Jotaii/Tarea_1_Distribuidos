@@ -5,8 +5,11 @@ services:
   headnode:
     build: headnode/
 
+    #command: python3 headnode.py & python3 server.py
+    #command: /bin/bash -c "python3 headnode.py && python3 server.py"
+    #command: ls -a
     command: python3 headnode.py
-
+    
     volumes:
       - ./headnode/:/headnode/
 
@@ -45,3 +48,12 @@ services:
 
   client:
     build: client/
+
+    volumes:
+      - ./client/:/client/
+
+    command: python3 client.py
+
+    depends_on:
+      - headnode
+
