@@ -2,7 +2,7 @@
 
 Integrantes:
   
-  -Juan Escalona - 2013735XX-X
+  -Juan Escalona - 201373551-7
   
   -Sebastián Torrico - 201330061-8
 
