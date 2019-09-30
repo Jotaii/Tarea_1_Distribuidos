@@ -3,6 +3,7 @@ import struct
 import sys
 import time
 from threading import Thread
+from random import randint
 
 def headnode_process():
 
@@ -59,6 +60,45 @@ def headnode_process():
 
         time.sleep(5.0 - ((time.time() - starttime) % 5.0)) 
 
+def client_process():
+
+    def fileWrite(message):
+        print(message)
+        f = open("respuestas.txt", "a")
+        f.write(message)
+        f.close()
+
+    hostname = socket.gethostname()    
+    IPAddr = socket.gethostbyname(hostname)    
+
+
+    fileWrite("Iniciando cliente\n")
+    newSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+    server_address = ("server", 5000)
+    print('Conectando a servidor {} por puerto {}'.format(*server_address))
+    fileWrite('Conectando a servidor {} por puerto {}'.format(*server_address) + "\n")
+    newSocket.connect(server_address)
+
+
+    try:
+        
+        fileWrite("Enviando saludo al servidor...\n")
+        
+        message = b'Saludos'
+        newSocket.sendall(message)
+
+        data = newSocket.recv(1024)
+        print("Servidor responde: " + '{!r}'.format(data))
+        fileWrite('Servidor responde {!r}'.format(data)+ "\n")
+        
+
+    finally:
+
+        fileWrite("Cerrando socket\n\n")
+        newSocket.close()
+
+
 def server_process():
 
     def fileWrite(message):
@@ -86,6 +126,10 @@ def server_process():
             data = connection.recv(1024)
             fileWrite("Se ha conectado el cliente " + client_address[0] + "\nCliente dice: {!r}".format(data) + "\n")
             
+            #Aqui se tiene que seleccionar el datanode a utilizar random
+            datanode_a_utilizar = randint(0,2)
+            
+            #
             if data:
                 fileWrite("Respondiendo a cliente...\n")
                 connection.sendall(b'Que tengas un buen dia')

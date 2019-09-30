@@ -34,7 +34,7 @@ while True:
         
         now = datetime.now()
         current_time = now.strftime("%H:%M:%S")
-
+        
         f.write("[" + current_time + "] " + 'Cliente dice: {!r}'.format(data) + "\n")
 
         if data:
