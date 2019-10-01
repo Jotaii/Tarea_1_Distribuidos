@@ -5,43 +5,40 @@ services:
   headnode:
     build: headnode/
 
-    #command: python3 headnode.py & python3 server.py
-    #command: /bin/bash -c "python3 headnode.py && python3 server.py"
-    #command: ls -a
     command: python3 headnode.py
     
     volumes:
       - ./headnode/:/headnode/
 
   datanode1:
-    build: datanode/
+    build: datanode1/
 
     command: python3 datanode.py
 
     volumes:
-      - ./datanode/:/datanode/
+      - ./datanode1/:/datanode/
 
     depends_on:
       - headnode
   
   datanode2:
-    build: datanode/
+    build: datanode2/
 
     command: python3 datanode.py
 
     volumes:
-      - ./datanode/:/datanode/
+      - ./datanode2/:/datanode/
 
     depends_on:
       - headnode
 
   datanode3:
-    build: datanode/
+    build: datanode3/
 
     command: python3 datanode.py
 
     volumes:
-      - ./datanode/:/datanode/
+      - ./datanode3/:/datanode/
 
     depends_on:
       - headnode
@@ -52,7 +49,7 @@ services:
     volumes:
       - ./client/:/client/
 
-    command: python3 client.py
+    command: tail -f /dev/null
 
     depends_on:
       - headnode
