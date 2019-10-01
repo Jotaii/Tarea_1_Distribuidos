@@ -2,6 +2,7 @@ import socket
 import struct
 import sys
 from threading import Thread
+from datetime import datetime
 
 # Creación de data.txt en el almacenamiento del datanode
 # Se usa así para que los archivos no queden bloqueados una vez que se apaguen los containers
@@ -12,8 +13,10 @@ def createFile():
 # Función para escribir mensajes en data.txt
 # Se usa así para que los archivos no queden bloqueados una vez que se apaguen los containers
 def fileWrite(message):
+    now = datetime.now()
+    current_time = now.strftime("%H:%M:%S")
     f = open("data.txt", "a")
-    f.write(message)
+    f.write("[" + current_time + "] " + message)
     f.close()
 
 # Función para que el datanode reciba y responda los mensajes multicast que envía el headnode
@@ -41,7 +44,7 @@ def multicast_response():
 # Función para que el datanode actúe como servidor para escuchar las peticiones del headnode (cliente)
 def server_process():
     # Iniciación del servicio
-    fileWrite("Iniciando servidor\n")
+    fileWrite("Iniciando servidor\n\n")
     hostname = socket.gethostname()    
     IPAddr = socket.gethostbyname(hostname)
 
