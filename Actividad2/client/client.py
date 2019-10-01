@@ -22,7 +22,6 @@ hostname = socket.gethostname()
 IPAddr = socket.gethostbyname(hostname)    
 
 #Iniciando cliente
-createFile()
 fileWrite("Iniciando cliente: Abriendo socket...\n")
 newSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 

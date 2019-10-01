@@ -25,7 +25,7 @@ services:
     build: client/
 
     #Se ejecuta el archivo del cliente.
-    command: python3 client.py
+    command: tail -f /dev/null
         
     volumes:
       - ./client:/client/
