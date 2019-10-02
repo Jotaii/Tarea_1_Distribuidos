@@ -38,15 +38,8 @@
 
 - Los registros se limpian y reinicializan al reiniciarse la arquitectura a excepción del cliente. Lo anterior se realizó para mantener simpleza y evitar confusiones.
 
-- Para la **Actividad 2** se utilizaron Threads para correr 2 servicios en un mismo container simultaneamente. Por ejemplo el *multicast* y el servidor del headnode.
-
 - El tiempo del log registrado en los archivos de registros se encuentra en sistema horario UTC. 
 
-- En caso de necesitar eliminar uno de los datanodes para probar consistencia del sistema, utilizar:
-
-	`$sudo docker kill actividad2_datanodeX_1`
-
-	Donde X corresponde al numero del datanode a eliminar. De este modo se puede verificar el funcionamiento del sistema revisando los registros del hearbeat sin cambiar su comportamiento ante el cliente.
 
 **Nota**:  Para encontrar el nombre de los contenedores, en caso de requerirse se puede utilizar el comando `$sudo docker ps`.
 
