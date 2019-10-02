@@ -17,6 +17,21 @@ def fileWrite(message):
     f.write("[" + current_time + "] " + message)
     f.close()
 
+# Interacción con el usuario. El usuario manda un mensaje
+accept = False
+while(accept != True):
+    print("Escriba un mensaje para un datanode: ")
+    user_input = input()
+
+    try:
+        user_input.encode('ascii')
+
+    except UnicodeEncodeError:
+        print("Ha insertado un caracter invalido. Intente nuevamente.\n")
+
+    else:
+        accept = True
+
 # Obtención de hostname y dirección IP del cliente
 hostname = socket.gethostname()    
 IPAddr = socket.gethostbyname(hostname)    
@@ -31,9 +46,6 @@ server_address = ("headnode", 5001)
 newSocket.connect(server_address)
 
 try:
-    # Interacción con el usuario. El usuario manda un mensaje
-    print("Escriba un mensaje para un datanode: ")
-    user_input = input()
     fileWrite("Usuario escribe: " + user_input + "\n")
 
     # Enviando el input del usuario al headnode
@@ -48,6 +60,6 @@ try:
 
 finally:
     # Cerrando conexión con el headnode
-    print("Terminando conexion con headnode")
+    print("Terminando conexion con headnode\n")
     fileWrite("Cerrando socket...\n\n")
     newSocket.close()
