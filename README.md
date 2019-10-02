@@ -67,7 +67,9 @@ Integrantes:
 ### Consideraciones generales
 - ***IMPORTANTE:*** Se recomienda utilizar el comando `$sudo docker-compose down` antes de cada inicialización de arquitectura, con el objetivo de realizar un montaje limpio.
 
-- El código esta diseñado para funcionar con carácteres ASCII, es decir, no acepta caracteres especiales (ejemplos: ñ, á, ó, ¿). En caso de accidentalmente ingresar alguno de ellos o ante cualquier error, reiniciar completamente la arquitectura:
+- El código esta diseñado para funcionar con carácteres ASCII, es decir, no acepta caracteres especiales (ejemplos: ñ, á, ó, ¿). 
+
+- Ante cualquier error, reiniciar completamente la arquitectura:
 
 	`$sudo docker-compose down`  
 	`$sudo docker-compose up`
@@ -75,6 +77,8 @@ Integrantes:
 - Los registros se limpian y reinicializan al reiniciarse la arquitectura a excepción del cliente. Lo anterior se realizó para mantener simpleza y evitar confusiones.
 
 - Para la **Actividad 2** se utilizaron Threads para correr 2 servicios en un mismo container simultaneamente. Por ejemplo el *multicast* y el servidor del headnode.
+
+- El tiempo del log registrado en los archivos de registros se encuentra en sistema horario UTC. 
 
 - En caso de necesitar eliminar uno de los datanodes para probar consistencia del sistema, utilizar:
 
